@@ -1,0 +1,71 @@
+.main-content {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: beige;
+}
+
+p {
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: rgb(42, 46, 38);
+}
+
+#fancy {
+  animation-name: blink;
+  animation-duration: 200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: Infinite;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+@keyframes blink {
+  0% {
+    color: rgb(39, 96, 30);
+  }
+  50% {
+    color: rgb(168, 184, 175);
+  }
+  100% {
+    color: rgb(18, 95, 27);
+  }
+}
+
+.comparison-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+
+  a {
+    font-size: medium;
+    align-self: center;
+    text-align: center;
+    color: rgb(127, 103, 103);
+    background-color: rgb(74, 48, 53);
+    padding: 20px;
+    border-radius: 27px;
+    cursor: pointer;
+    width: 80px;
+  }
+
+  a:hover {
+    background-color: adjust-hue($color: #1fa077, $degrees: 30);
+  }
+
+  .selected-text {
+    padding: 20px;
+    margin-bottom: 2vh;
+  }
+}

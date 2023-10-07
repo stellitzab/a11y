@@ -1,0 +1,23 @@
+<app-header />
+<p id="fancy">Make a selection</p>
+<div class="main-content">
+  <form [formGroup]="form">
+    <div class="comparison-cards">
+      <ng-container *ngFor="let card of contents">
+        <app-comparison-card
+          (selectionChanged)="onChildSelectionChanged($event)"
+          [form]="form"
+          [content]="card"
+        />
+      </ng-container>
+    </div>
+    <div class="button-container">
+      <div *ngIf="selected && submitted" class="selected-text">
+        You selected {{ selected }}!
+      </div>
+      <a (click)="onSubmit()" type="submit">{{ buttonText }}</a>
+    </div>
+  </form>
+</div>
+
+<app-footer />

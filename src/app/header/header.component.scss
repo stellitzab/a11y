@@ -1,0 +1,21 @@
+.header {
+  min-height: 10vh;
+  display: flex;
+  background-color: rgb(42, 46, 38);
+  flex-direction: column;
+  max-height: 15vh;
+
+  .heading {
+    font-size: 3em;
+    color: rgb(115, 204, 115);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2vh;
+    line-height: normal;
+  }
+
+  img {
+    align-self: center;
+    padding-bottom: 5%;
+  }
+}

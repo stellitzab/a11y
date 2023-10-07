@@ -1,0 +1,32 @@
+<label class="radio-button" *ngIf="content">
+  <input
+    class="radio-input"
+    type="radio"
+    [value]="content.title"
+    [formControl]="plan"
+    (change)="onSelectionChange(content.title)"
+    [checked]="content.title === 'Individual'"
+  />
+  <div class="card">
+    <p class="heading">{{ content.title }}</p>
+    <ng-container *ngFor="let item of content?.isIncluded">
+      <div class="included-list-item">
+        <img src="../../assets/checkbox-32.png" />
+        <li>
+          {{ item }}
+        </li>
+      </div>
+    </ng-container>
+    <ng-container *ngFor="let item of content?.notIncluded">
+      <div class="not-included-list-item">
+        <li>
+          {{ item }}
+        </li>
+      </div>
+    </ng-container>
+    <p>Nr of accounts: {{ content.numberOfAccounts }}</p>
+    <div class="price">
+      <p>{{ content.price }}</p>
+    </div>
+  </div>
+</label>
