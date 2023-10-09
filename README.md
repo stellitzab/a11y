@@ -1,4 +1,4 @@
-# Accessiblity Workshop - DevUX 2023
+# Accessiblity Workshop - DevUX 2023 🎈
 
 A project for practicing or playing around with adapting digital services to be more accessible. 
 
