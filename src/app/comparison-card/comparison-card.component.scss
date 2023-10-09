@@ -1,20 +1,16 @@
-.radio-input:checked + label {
-  box-shadow: 0 0 1px 1px #2ecc71;
-  background-color: aliceblue;
-}
-
-:checked + label {
-  background-color: antiquewhite;
-}
-
 label {
   cursor: pointer;
 }
 
 input[type="radio"]:checked + .card {
-  background: rgba(218, 164, 241, 0.856);
-  box-shadow: 0px 0px 0px 7px #6522a789;
+  background: rgba(223, 203, 231, 0.856);
+  background-color: #7daef3;
+  box-shadow: 0px 0px 3px 6px rgba(95, 147, 185, 0.829);
   border-radius: 5%;
+}
+
+p {
+  margin-top: 3%;
 }
 
 .radio-input {
@@ -36,21 +32,21 @@ input[type="radio"]:checked + .card {
     "Helvetica Neue",
     sans-serif;
   list-style-type: none;
-  background: linear-gradient(
-    180deg,
-    rgba(131, 194, 151, 0.536) 25%,
-    rgba(91, 190, 116, 0.808) 60%
-  );
-  border: cadetblue;
+  background: rgb(228, 194, 208);
+
   display: flex;
   flex-direction: column;
   min-width: 100px;
   padding: 10px;
-  border-radius: 5%;
+  border-radius: 10px;
 
   &:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-    background-color: fade-in($color: rgb(125, 174, 243), $amount: 0.8);
+    background-color: fade-in($color: rgb(153, 191, 245), $amount: 0.8);
+
+    .heading {
+      text-decoration: underline;
+    }
 
     .price p {
       box-shadow: 2px 2px 2px rgb(91, 156, 222);
@@ -77,13 +73,6 @@ input[type="radio"]:checked + .card {
     align-items: center;
   }
 
-  .radio-input {
-    &:checked {
-      background: saddlebrown;
-      border-color: salmon;
-    }
-  }
-
   .not-included-list-item {
     display: flex;
     margin-bottom: 1em;
@@ -104,9 +93,5 @@ input[type="radio"]:checked + .card {
   img {
     max-width: fit-content;
     margin-right: 10px;
-  }
-
-  :checked {
-    background-color: khaki;
   }
 }
