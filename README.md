@@ -1,6 +1,6 @@
 # Accessiblity Workshop - DevUX 2023 🎈
 
-A project for practicing or playing around with adapting digital services to be more accessible. 
+A project for practicing or playing around with adapting digital services to be more accessible. The goal is to adapt the page to make the content accessible for users with screen readers or users only able to navigate with the keyboard for example.
 
 ## Requirements
 
@@ -16,22 +16,23 @@ A project for practicing or playing around with adapting digital services to be 
 
 ### Designer
 
-* If you are not coding you can go to the [vercel deployment](https://a11y-stellitzab.vercel.app/) where the code will be available. 
+* If you are not coding you can go to the [vercel deployment](https://a11y-stellitzab.vercel.app/) where the project will be available. 
 
 ## Useful links
 
+* [A11y 101](https://a11y-101.com/)
 * [Accessibility insights (extension)](https://accessibilityinsights.io/docs/web/overview/)
 * [WCAG Contrast checker (Chrome extension)](https://chrome.google.com/webstore/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf)
 * [Guidelines for web development [SWE]](https://webbriktlinjer.se/wcag/)
 * [Guidelines for web development [ENG]](https://www.w3.org/TR/WCAG21/)
 * [ARIA docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 
+
 ## Screen readers 
 * [NVDA](https://www.nvaccess.org/download/)
 * VoiceOver (Built-in with Mac OS)
 * [JAWS](https://www.freedomscientific.com/products/software/jaws/) (among the most popular, however not for free)
 * [Screen reader (Chrome extension)](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn)
-
 
 
 
